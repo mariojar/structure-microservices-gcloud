@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: quote-engine
+  cloud:
+    kubernetes: 
+      reload: 
+        enabled: true
+management:
+  endpoint:
+    restart:
+      enabled: true
+#  profiles:
+#    active: local
+#    active: dev
+#    active: dev
+#  cloud:
+#    config:
+#      uri: "http://localhost:9000"
+#   bisogna mettere un dns fisso
+#      uri: "http://ec2-34-243-218-111.eu-west-1.compute.amazonaws.com:9000"
+#      failFast: true 
+#      enabled: true

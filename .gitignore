@@ -1,0 +1,15 @@
+/.metadata/
+
+\.recommenders/caches/
+
+\.recommenders/index/http___download_eclipse_org_recommenders_models_photon_/
+
+traductor/\.classpath
+
+traductor/\.project
+
+traductor/\.settings/
+
+traductor/src/main/resources/docker/traductor-proxy-2\.0\.2\.RELEASE\.jar
+
+traductor/docker/traductor-proxy-2\.0\.2\.RELEASE\.jar

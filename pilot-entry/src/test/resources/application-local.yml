@@ -1,0 +1,34 @@
+configuration:
+  greeting: Hello World Quote Engine TESTS . Local Configuration
+server:  
+  port: 8099
+database:
+  host: lancio-dev.cg4tiybk0kue.eu-west-1.rds.amazonaws.com
+  port: 3306
+  schema: lancio
+  user: lancio_dba
+  password: "Lancio!2018" 
+logging:  
+#  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+
+# --------------------------------  
+# ELASTIC-SEARCH 
+# -------------------------------- 
+#elasticSearch:
+#  host: localhost
+#  port: 9200
+#  protocol: http
+#  user: elastic
+#  password: changeme
+#
+#
+elasticSearch:
+  host: cd7ab4aa80cd0e6a3bd231f03c07deb3.europe-west1.gcp.cloud.es.io
+  port: 9243
+  protocol: https
+  user: elastic
+  password: sb6MxPTg6n84I98GvSuSjrX2      

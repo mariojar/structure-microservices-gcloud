@@ -1,0 +1,47 @@
+# --------------------------------
+# INITIAL CONFIGURATION
+# --------------------------------
+
+configuration:
+  greeting: Hello World Pilot. Local Configuration
+server:  
+  port: 8083
+
+spring:
+ autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# --------------------------------  
+# DATABASE CONFIGURATION  
+# -------------------------------- 
+database:
+#  host: lancio-dev.cg4tiybk0kue.eu-west-1.rds.amazonaws.com
+  host: 52.51.83.215
+  port: 3306
+  schema: lancio
+  user: lancio_dba
+  password: "Lancio!2018"
+  
+# --------------------------------    
+# ACTUATOR CONFIGURATION   
+# --------------------------------
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,beans,auditevents,conditions, httptrace,loggers,metrics,configprops
+
+
+
+
+# --------------------------------    
+# LOG CONFIGURATION   
+# --------------------------------
+
+logging:  
+#  file: logs/${spring.application.name}.log
+  level:
+#    root: DEBUG
+    org.hibernate: INFO
+   # com.netflix.discovery: 'ON'
+    #org.springframework.cloud: 'DEBUG'

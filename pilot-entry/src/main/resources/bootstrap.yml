@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: quote-engine
+  cloud:
+    kubernetes: 
+      reload: 
+        enabled: true
+management:
+  endpoint:
+    restart:
+      enabled: true
+
+#spring:
+#  profiles: local
+#  cloud:
+#      config:
+#            server:
+#                local:
+#                    searchLocations: classpath:/
+#
+#---
+#
+#spring:
+#  profiles: local-container
+#  cloud:
+#    config:
+#      uri: "http://34.243.218.111:9000"
+#      failFast: true 
+#      enabled: true
+#      
+#---
+#
+#spring:
+#  profiles: dev
+#  cloud:
+#    config:
+#      uri: "http://34.243.218.111:9000"
+#      failFast: true 
+#      enabled: true      
