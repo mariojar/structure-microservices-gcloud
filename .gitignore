@@ -13,3 +13,7 @@ traductor/\.settings/
 traductor/src/main/resources/docker/traductor-proxy-2\.0\.2\.RELEASE\.jar
 
 traductor/docker/traductor-proxy-2\.0\.2\.RELEASE\.jar
+
+pilot-entry/target/classes/META-INF/
+
+target/
